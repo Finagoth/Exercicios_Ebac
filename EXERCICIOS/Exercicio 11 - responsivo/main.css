@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+section h2{
+  font-family: "Bungee", cursive;
+}
+
+body {
+  font-family:"Roboto", sans-serif;
+  background-color: #fff;
+}
+
+header {
+  padding: 16px 0;
+  background-color: #4132b1;
+  color: #ecf0f1;
+}
+
+header h1,
+section h2 {
+  font-weight: normal;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+img {
+  width: 500px;
+  height: 350px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container,
+section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .container {
+  align-items: flex-start;
+}
+
+section {
+  padding: 24px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+}
+
+#about .container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#about .store-front {
+  margin-left: 100px;
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.store-front {
+  width: 50%;
+}
+
+#produtos h2 {
+  margin-top: 16px;
+  margin-left: 427px;
+}
+
+article{
+  align-items: center;
+  justify-content: space-between;
+}
+
+article p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.produto-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.produto {
+  text-align: center;
+  background-color: #b6b2e0;
+  padding: 16px;
+  width: 250px;
+}
+
+button {
+  background-color: #5343d9;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4132b1;
+}
+
+/*  Layout Tablet (641px até 1023px)  */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  #about .container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+  }
+
+  #about img {
+    width: 80%; 
+  }
+
+  .produto {
+    width: 45%; 
+  }
+}
+
+/* Layout Mobile (até 640px) */
+@media screen and (max-width: 640px) {
+  header .container {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  header nav li {
+    display: block; 
+    margin: 8px 0;
+  }
+
+  #about .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 100%; 
+  }
+
+  .produto {
+    width: 100%; 
+    margin: 0 auto;
+  }
+}
