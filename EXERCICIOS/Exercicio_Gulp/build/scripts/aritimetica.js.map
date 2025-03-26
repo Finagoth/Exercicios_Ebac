@@ -1,0 +1,1 @@
+{"version":3,"file":"aritimetica.js","names":["somar","require","console","log"],"sources":["aritimetica.js"],"mappings":"AAAA,MAAMA,MAAQC,QAAQ,aAEtBC,QAAQC,IAAI,UAAWH,MAAM,GAAI","ignoreList":[],"sourcesContent":["const somar = require('../../sum');\r\n\r\nconsole.log('Somar: ', somar(10, 20));"]}
