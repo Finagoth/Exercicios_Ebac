@@ -1,0 +1,28 @@
+.form {
+  margin: 40px;
+}
+.form__produtos {
+  max-width: 640px;
+  width: 100%;
+  margin: 56px auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 1%;
+}
+.form__imagem {
+  width: 100%;
+}
+.form__nome {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+.form__descricao {
+  color: gray;
+}
+.formem--destaque {
+  border: 2px solid gold;
+  padding: 8px;
+  background-color: #ffff42;
+}
+
+/*# sourceMappingURL=main.css.map */
